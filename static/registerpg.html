@@ -89,8 +89,9 @@
 <body>
     <div class="form-container">
         <h1>Engineering Theme Registration</h1>
-        <form class="row g-3 needs-validation" method="POST" action="{% url 'houseplan' %}" novalidate>
+        <form class="row g-3 needs-validation" method="POST" action="{% url 'home' %}" novalidate>
             {% csrf_token %}
+            <p>Already have an account? <a href="{% url 'loginpg' %}">Login Here</a></p><br><br>
             <div class="col-md-4">
                 <label for="validationCustom01" class="form-label">First Name</label>
                 <input type="text" class="form-control" id="validationCustom01" name="first_name" required>
